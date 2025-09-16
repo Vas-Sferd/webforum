@@ -1,0 +1,39 @@
+<!-- auth.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Forum - Login/Register</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-bg-primary text-text-primary min-h-screen flex items-center justify-center">
+    <div class="bg-bg-secondary rounded-lg p-8 w-full max-w-md">
+        <h1 class="text-2xl font-bold text-center mb-6">Welcome</h1>
+        <nav class="flex justify-center space-x-4 mb-6">
+            <button id="login-tab" class="px-4 py-2 bg-bg-primary rounded-full hover:bg-accent hover:text-white">Login</button>
+            <button id="register-tab" class="px-4 py-2 bg-bg-primary rounded-full hover:bg-accent hover:text-white">Register</button>
+        </nav>
+
+        <form id="login-form" class="space-y-4">
+            <input type="text" placeholder="Username" class="w-full bg-bg-primary border border-bg-secondary rounded p-2 focus:outline-none focus:border-accent">
+            <input type="password" placeholder="Password" class="w-full bg-bg-primary border border-bg-secondary rounded p-2 focus:outline-none focus:border-accent">
+            <button type="submit" class="w-full bg-accent text-white px-4 py-2 rounded-full hover:bg-opacity-90">Login</button>
+            <a href="#" class="text-sm text-accent hover:underline block text-center">Forgot Password?</a>
+        </form>
+
+        <form id="register-form" class="space-y-4 hidden">
+            <input type="text" placeholder="Username" class="w-full bg-bg-primary border border-bg-secondary rounded p-2 focus:outline-none focus:border-accent">
+            <input type="email" placeholder="Email" class="w-full bg-bg-primary border border-bg-secondary rounded p-2 focus:outline-none focus:border-accent">
+            <input type="password" placeholder="Password" class="w-full bg-bg-primary border border-bg-secondary rounded p-2 focus:outline-none focus:border-accent">
+            <button type="submit" class="w-full bg-accent text-white px-4 py-2 rounded-full hover:bg-opacity-90">Register</button>
+        </form>
+
+        <div class="mt-6">
+            <button class="w-full bg-blue-600 text-white px-4 py-2 rounded-full mb-2 hover:bg-opacity-90">Login with Google</button>
+            <button class="w-full bg-gray-800 text-white px-4 py-2 rounded-full hover:bg-opacity-90">Login with GitHub</button>
+        </div>
+    </div>
+</body>
+</html>

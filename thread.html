@@ -1,0 +1,98 @@
+<!-- thread.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Forum - Best Games of 2023</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-bg-primary text-text-primary min-h-screen flex flex-col">
+    <header class="bg-bg-secondary shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold">Modern Forum</a>
+            <nav class="hidden md:flex space-x-4">
+                <a href="index.html" class="hover:text-accent">Home</a>
+                <a href="subforum.html" class="hover:text-accent">Forums</a>
+                <a href="profile.html" class="hover:text-accent">Members</a>
+                <a href="auth.html" class="hover:text-accent">Login</a>
+            </nav>
+            <div class="md:hidden">
+                <input type="checkbox" id="menu-toggle" class="hidden">
+                <label for="menu-toggle" class="cursor-pointer">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </label>
+                <div class="absolute right-0 mt-2 bg-bg-secondary shadow-md hidden" id="mobile-menu">
+                    <a href="index.html" class="block px-4 py-2 hover:bg-bg-primary">Home</a>
+                    <a href="subforum.html" class="block px-4 py-2 hover:bg-bg-primary">Forums</a>
+                    <a href="profile.html" class="block px-4 py-2 hover:bg-bg-primary">Members</a>
+                    <a href="auth.html" class="block px-4 py-2 hover:bg-bg-primary">Login</a>
+                </div>
+            </div>
+            <div class="flex items-center space-x-2">
+                <img src="https://via.placeholder.com/32" alt="User Avatar" class="w-8 h-8 rounded-full">
+                <span>Guest</span>
+            </div>
+        </div>
+    </header>
+
+    <nav aria-label="Breadcrumb" class="container mx-auto px-4 py-2 text-text-secondary">
+        <ol class="flex space-x-2">
+            <li><a href="index.html" class="hover:text-accent">Home</a></li>
+            <li> > <a href="subforum.html" class="hover:text-accent">Gaming</a></li>
+            <li> > Best Games of 2023</li>
+        </ol>
+    </nav>
+
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <div class="flex justify-between items-center mb-4">
+            <h1 class="text-3xl font-bold">Best Games of 2023</h1>
+            <button class="bg-accent text-white px-4 py-2 rounded-full hover:bg-opacity-90">Reply</button>
+        </div>
+
+        <article class="bg-bg-secondary rounded-lg mb-4 flex flex-col md:flex-row">
+            <aside class="p-4 border-b md:border-b-0 md:border-r border-bg-primary md:w-48">
+                <img src="https://via.placeholder.com/64" alt="CatLover42 Avatar" class="w-16 h-16 rounded-full mx-auto">
+                <p class="text-center font-semibold">CatLover42</p>
+                <p class="text-center text-sm text-text-secondary">Joined: Jan 2023</p>
+                <p class="text-center text-sm text-text-secondary">Posts: 150</p>
+            </aside>
+            <div class="flex-grow p-4">
+                <p class="mb-2">What are your top picks for 2023? Mine is Zelda: Tears of the Kingdom.</p>
+                <p class="text-sm text-text-secondary">Posted: 1 day ago</p>
+                <button class="mt-2 text-accent hover:underline">Like</button>
+                <p class="mt-4 text-sm text-text-secondary italic border-t pt-2 border-bg-primary">Signature: Cats rule the world!</p>
+            </div>
+        </article>
+
+        <article class="bg-bg-secondary rounded-lg mb-4 flex flex-col md:flex-row">
+            <aside class="p-4 border-b md:border-b-0 md:border-r border-bg-primary md:w-48">
+                <img src="https://via.placeholder.com/64" alt="TechGuru11 Avatar" class="w-16 h-16 rounded-full mx-auto">
+                <p class="text-center font-semibold">TechGuru11</p>
+                <p class="text-center text-sm text-text-secondary">Joined: Mar 2022</p>
+                <p class="text-center text-sm text-text-secondary">Posts: 300</p>
+            </aside>
+            <div class="flex-grow p-4">
+                <p class="mb-2">Definitely Baldur's Gate 3! Amazing story.</p>
+                <p class="text-sm text-text-secondary">Posted: 1 hour ago</p>
+                <button class="mt-2 text-accent hover:underline">Like</button>
+                <p class="mt-4 text-sm text-text-secondary italic border-t pt-2 border-bg-primary">Signature: Tech is life.</p>
+            </div>
+        </article>
+
+        <!-- Reply form -->
+        <form class="bg-bg-secondary rounded-lg p-4 mt-8">
+            <textarea class="w-full bg-bg-primary border border-bg-secondary rounded p-2 focus:outline-none focus:border-accent" rows="4" placeholder="Your reply..."></textarea>
+            <button type="submit" class="mt-2 bg-accent text-white px-4 py-2 rounded-full hover:bg-opacity-90">Post Reply</button>
+        </form>
+    </main>
+
+    <footer class="bg-bg-secondary py-4 text-center text-text-secondary">
+        <p>&copy; 2025 Modern Forum. All rights reserved.</p>
+        <a href="#" class="hover:text-accent">Privacy</a> | <a href="#" class="hover:text-accent">Terms</a>
+    </footer>
+</body>
+</html>

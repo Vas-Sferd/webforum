@@ -1,0 +1,84 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Forum - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-bg-primary text-text-primary min-h-screen flex flex-col">
+    <header class="bg-bg-secondary shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold">Modern Forum</a>
+            <nav class="hidden md:flex space-x-4">
+                <a href="index.html" class="hover:text-accent">Home</a>
+                <a href="subforum.html" class="hover:text-accent">Forums</a>
+                <a href="profile.html" class="hover:text-accent">Members</a>
+                <a href="auth.html" class="hover:text-accent">Login</a>
+            </nav>
+            <div class="md:hidden">
+                <input type="checkbox" id="menu-toggle" class="hidden">
+                <label for="menu-toggle" class="cursor-pointer">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </label>
+                <div class="absolute right-0 mt-2 bg-bg-secondary shadow-md hidden" id="mobile-menu">
+                    <a href="index.html" class="block px-4 py-2 hover:bg-bg-primary">Home</a>
+                    <a href="subforum.html" class="block px-4 py-2 hover:bg-bg-primary">Forums</a>
+                    <a href="profile.html" class="block px-4 py-2 hover:bg-bg-primary">Members</a>
+                    <a href="auth.html" class="block px-4 py-2 hover:bg-bg-primary">Login</a>
+                </div>
+            </div>
+            <div class="flex items-center space-x-2">
+                <img src="https://via.placeholder.com/32" alt="User Avatar" class="w-8 h-8 rounded-full">
+                <span>Guest</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <section class="bg-bg-secondary rounded-lg p-6 mb-8">
+            <h1 class="text-3xl font-bold mb-2">Welcome to Modern Forum</h1>
+            <p class="text-text-secondary">Join our community for discussions on various topics!</p>
+        </section>
+
+        <section>
+            <h2 class="text-2xl font-semibold mb-4">Forum Categories</h2>
+            <div class="space-y-4">
+                <div class="bg-bg-secondary rounded-lg p-4">
+                    <h3 class="text-xl font-bold">General</h3>
+                    <p class="text-text-secondary">General discussions about anything.</p>
+                    <div class="mt-2 flex justify-between text-sm text-text-secondary">
+                        <span>Latest: "Hello World" by NovaSpectre - 2 hours ago</span>
+                        <span>Threads: 150 | Posts: 1,200</span>
+                    </div>
+                </div>
+                <div class="bg-bg-secondary rounded-lg p-4">
+                    <h3 class="text-xl font-bold">Gaming</h3>
+                    <p class="text-text-secondary">Talk about your favorite games.</p>
+                    <div class="mt-2 flex justify-between text-sm text-text-secondary">
+                        <span>Latest: "Best Games of 2023" by TechGuru11 - 1 day ago</span>
+                        <span>Threads: 300 | Posts: 5,000</span>
+                    </div>
+                </div>
+                <div class="bg-bg-secondary rounded-lg p-4">
+                    <h3 class="text-xl font-bold">Off-Topic</h3>
+                    <p class="text-text-secondary">Anything goes here.</p>
+                    <div class="mt-2 flex justify-between text-sm text-text-secondary">
+                        <span>Latest: "Random Thoughts" by CatLover42 - 3 hours ago</span>
+                        <span>Threads: 100 | Posts: 800</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-bg-secondary py-4 text-center text-text-secondary">
+        <p>&copy; 2025 Modern Forum. All rights reserved.</p>
+        <a href="#" class="hover:text-accent">Privacy</a> | <a href="#" class="hover:text-accent">Terms</a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!-- profile.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Forum - Profile: CatLover42</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-bg-primary text-text-primary min-h-screen flex flex-col">
+    <header class="bg-bg-secondary shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold">Modern Forum</a>
+            <nav class="hidden md:flex space-x-4">
+                <a href="index.html" class="hover:text-accent">Home</a>
+                <a href="subforum.html" class="hover:text-accent">Forums</a>
+                <a href="profile.html" class="hover:text-accent">Members</a>
+                <a href="auth.html" class="hover:text-accent">Login</a>
+            </nav>
+            <div class="md:hidden">
+                <input type="checkbox" id="menu-toggle" class="hidden">
+                <label for="menu-toggle" class="cursor-pointer">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </label>
+                <div class="absolute right-0 mt-2 bg-bg-secondary shadow-md hidden" id="mobile-menu">
+                    <a href="index.html" class="block px-4 py-2 hover:bg-bg-primary">Home</a>
+                    <a href="subforum.html" class="block px-4 py-2 hover:bg-bg-primary">Forums</a>
+                    <a href="profile.html" class="block px-4 py-2 hover:bg-bg-primary">Members</a>
+                    <a href="auth.html" class="block px-4 py-2 hover:bg-bg-primary">Login</a>
+                </div>
+            </div>
+            <div class="flex items-center space-x-2">
+                <img src="https://via.placeholder.com/32" alt="User Avatar" class="w-8 h-8 rounded-full">
+                <span>Guest</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 py-8 flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-8">
+        <aside class="bg-bg-secondary rounded-lg p-4 md:w-1/4">
+            <img src="https://via.placeholder.com/128" alt="CatLover42 Large Avatar" class="w-32 h-32 rounded-full mx-auto">
+            <h2 class="text-xl font-bold text-center mt-2">CatLover42</h2>
+            <p class="text-center text-text-secondary">Senior Member</p>
+            <p class="text-center text-sm text-text-secondary">Joined: Jan 2023</p>
+            <button class="w-full mt-4 bg-accent text-white px-4 py-2 rounded-full hover:bg-opacity-90">Message</button>
+        </aside>
+
+        <section class="flex-grow bg-bg-secondary rounded-lg p-4">
+            <nav class="flex space-x-4 mb-4">
+                <button class="px-4 py-2 bg-bg-primary rounded-full hover:bg-accent hover:text-white">Activity</button>
+                <button class="px-4 py-2 bg-bg-primary rounded-full hover:bg-accent hover:text-white">Threads</button>
+                <button class="px-4 py-2 bg-bg-primary rounded-full hover:bg-accent hover:text-white">Replies</button>
+            </nav>
+
+            <div>
+                <h3 class="text-lg font-semibold mb-2">Recent Activity</h3>
+                <div class="space-y-4">
+                    <div class="bg-bg-primary rounded p-2">
+                        <a href="thread.html" class="hover:text-accent">Replied to "Best Games of 2023"</a>
+                        <p class="text-sm text-text-secondary">Lorem ipsum dolor sit amet...</p>
+                        <p class="text-xs text-text-secondary">1 hour ago</p>
+                    </div>
+                    <div class="bg-bg-primary rounded p-2">
+                        <a href="#" class="hover:text-accent">Started "Favorite Cats in Games"</a>
+                        <p class="text-sm text-text-secondary">Discuss cats in video games...</p>
+                        <p class="text-xs text-text-secondary">2 days ago</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-bg-secondary py-4 text-center text-text-secondary">
+        <p>&copy; 2025 Modern Forum. All rights reserved.</p>
+        <a href="#" class="hover:text-accent">Privacy</a> | <a href="#" class="hover:text-accent">Terms</a>
+    </footer>
+</body>
+</html>
