@@ -1,0 +1,16 @@
+{
+	frankenphp {
+		num_threads 4
+	}
+}
+
+localhost:8080 {
+	# Корневая директория для статических файлов
+	root * public
+
+	# Включение сжатия
+	encode zstd br gzip
+
+	# Обработка PHP файлов
+	php_server
+}
